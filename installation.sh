@@ -1,5 +1,9 @@
 #!/bin/bash
 
+## Command to run the script, this is a gentoo installation script in case you didn't read the title??
+## This is mainly meant for my own use, if you wanna use it go ahead.
+## bash <(curl -s https://raw.githubusercontent.com/MrFlacko/Gentoo-Installation/main/installation.sh) 
+
 formatDisk() {
     ## Main Formatting of the drive, this will create 512MB partition at the start of the drive for EFI
     ## and create a 4GB partition for the Swap, finally the rest of the drive placed as the linux filesystem
