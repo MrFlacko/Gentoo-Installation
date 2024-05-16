@@ -22,7 +22,7 @@ formatDisk() {
     echo "Creating partitions..."
     parted -s $drive mklabel gpt \
         mkpart primary 1MiB 513MiB \
-        mkpart primary 513MiB 4617MiB \
+        mkpart primary linux-swap 513MiB 4617MiB \
         mkpart primary 4617MiB 100%
 
     # Set to EFI
